@@ -1,0 +1,443 @@
+body {
+    font-family: courier-std, "Courier-New", Courier, monospace;
+    /* chose a fallback font*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF1493;
+    /*das ist tutti Pink*/
+    text-align: left;
+    background-color: black;
+}
+
+
+/*DARK MODE*/
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: #FF1493;
+    }
+}
+
+.back {
+    width: "100%";
+}
+
+h1 {
+    font-family: 'Beth Ellen', cursive;
+}
+
+h2 {
+    font-size: 0.8;
+    margin-bottom: -1%;
+    margin-top: 1%;
+}
+
+.text {
+    font-family: 'Beth Ellen', cursive;
+}
+
+.glow {
+    font-size: 3vw;
+    color: #fff;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.impressum {
+    font-size: smaller;
+}
+
+.thx {
+    font-size: larger;
+    font-weight: normal;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+/* HOME */
+
+
+/* Running Marquee */
+
+.marquee {
+    width: 100%;
+    line-height: 50px;
+    background-color: none;
+    color: #FF1493;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+/* this used to be the index background group photo */
+
+
+/*
+.start-image {
+  background-image: url("star.png");
+  height: 55rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+*/
+
+.start-text {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 300%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+}
+
+.centered {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+}
+
+#site-logo {
+    max-width: 180px;
+    margin-left: 5px;
+}
+
+a.nav-link {
+    margin-top: 30px;
+    color: #FF1493;
+}
+
+nav.sticky-top {
+    background-color: black;
+}
+
+a {
+    color: #FF1493;
+}
+
+a:hover {
+    color: lightgrey;
+    text-decoration: overline;
+}
+
+a:active {
+    color: #FF1493;
+    text-decoration: underline;
+}
+
+a.left {
+    margin-left: 250px;
+}
+
+a.right {
+    margin-right: 50px;
+}
+
+p.block {
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+}
+
+p.bu {
+    font-size: 0.8rem;
+}
+
+
+/********* Simple or original overlay *******/
+
+
+/* Main container */
+
+.overlay-image {
+    position: relative;
+    width: 100%;
+}
+
+
+/* Original image */
+
+.overlay-image .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Original text overlay */
+
+.overlay-image .text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+/********* Overlay on hover *******/
+
+
+/* New overlay on hover */
+
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+/* New overlay appearance on hover */
+
+.overlay-image:hover .hover {
+    opacity: 1;
+}
+
+
+/********* Background and text only overlay on hover *******/
+
+.overlay-image .normal {
+    transition: .5s ease;
+}
+
+.overlay-image:hover .normal {
+    opacity: 0;
+}
+
+.overlay-image .hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Make the image fully responsive */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid {
+    border-style: none;
+}
+
+.home {
+    text-align: center;
+}
+
+.row {
+    padding: 10px;
+    margin: 5px;
+    border-style: none;
+}
+
+.col-2 {
+    padding: 1px;
+    border-style: solid;
+}
+
+.col-3 {
+    padding: 1px;
+    border-style: solid;
+}
+
+.col-4 {
+    padding: 1px;
+    border-style: solid;
+}
+
+.col-5 {
+    padding: 1px;
+    border-style: solid;
+}
+
+.col-6 {
+    padding: 1px;
+    border-style: solid;
+}
+
+.col-7 {
+    padding: 1px;
+    border-style: solid;
+}
+
+.col-9 {
+    padding: none;
+    margin: none;
+    border-style: solid;
+}
+
+
+/* try to make the crew seem quadratisch*/
+
+.quadrat {
+    padding: 10px;
+    height: 25%;
+    width: 25%;
+}
+
+.fixed-bottom {
+    background-color: black;
+}
+
+
+/* css für video im vordergrund
+
+.responsive-video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.responsive-video {
+position: relative;
+padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio
+
+*/
+
+
+/* Video in Background */
+
+@media (max-width: 750px) {
+    .start-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 200%;
+        transform: translate(-50%, -50%);
+        color: inherit;
+    }
+    .responsive-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .responsive-video {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* Default for 1600x900 videos 16:9 ratio*/
+        height: 0;
+        overflow: hidden;
+    }
+    div.row {
+        padding: none;
+        margin: none;
+    }
+    p.block {
+        text-align: left;
+        color: white;
+    }
+    p.bu {
+        font-size: 0.6rem;
+    }
+    img {
+        padding: 5px;
+        margin: 5px;
+    }
+    a {
+        color: #FF1493;
+    }
+    a:hover {
+        color: lightgrey;
+        text-decoration: overline;
+    }
+    a:active {
+        color: #FF1493;
+        text-decoration: underline;
+    }
+    a.nav-link {
+        margin-top: 2px;
+        color: #FF1493;
+    }
+    a.left {
+        margin-left: 0px;
+    }
+    .navbar-toggler-icon {
+        width: 47px;
+        margin-left: -5px;
+        height: 34px;
+        background-color: #FF1493;
+        border: solid;
+    }
+    .line {
+        width: 100%;
+        float: left;
+        height: 2px;
+        color: black;
+        margin-bottom: 9px;
+        z-index: 1000;
+    }
+    .image {
+        justify-content: space-around;
+    }
+    .marquee {
+        width: 100%;
+        line-height: 20px;
+        background-color: none;
+        color: #FF1493;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .glow {
+        font-size: 6vw;
+        color: #fff;
+        text-align: left;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+}
