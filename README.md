@@ -9,7 +9,7 @@ The idea for the website came up in summer 2019. Shortly after the first layout 
 
 (show some documents of the early stage)
 
-You can take a looke at the responsive static website that was realized with the help of the Bootstrap framework. 
+You can take a look at the responsive static website that was realized with the help of the Bootstrap framework. 
 
 www.tuttidamore.de
 
