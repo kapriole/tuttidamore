@@ -374,21 +374,32 @@ p.bu {
 }
 
 
-/* css für video im vordergrund
+/*video in frame*/
 
-.responsive-video iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+.wrap-element {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
-.responsive-video {
-position: relative;
-padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio
+#video {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 97%;
+    height: 90%;
+    border: 0;
+}
 
-*/
+#mutebtn {
+    color: black;
+    font-weight: bold;
+    background-color: #FF1493;
+    border: none;
+    float: right;
+    margin-top: 15%;
+    margin-right: 3%;
+}
 
 
 /* Video in Background */
@@ -406,20 +417,36 @@ padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio
         transform: translate(-50%, -50%);
         color: inherit;
     }
-    .responsive-video iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .responsive-video {
+    /*video in frame*/
+    .wrap-element {
         position: relative;
-        padding-bottom: 56.25%;
-        /* Default for 1600x900 videos 16:9 ratio*/
-        height: 0;
         overflow: hidden;
+        /*padding-top: 56.25%;*/
     }
+    #video {
+        position: absolute;
+        top: 12%;
+        left: 3%;
+        width: 78%;
+        height: 57%;
+        border: 0;
+    }
+    .tv {
+        width: 100%;
+        margin-top: 35%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: -30%;
+    }
+    #mutebtn {
+        color: black;
+        font-weight: bold;
+        background-color: #FF1493;
+        border: none;
+        float: right;
+        margin-right: 3%;
+    }
+    /* the video frame on the homepage */
     div.row {
         padding: none;
         margin: none;
@@ -498,5 +525,28 @@ padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio
         to {
             text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
         }
+    }
+    /* trash tv */
+    .wrap-element {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    #video {
+        position: absolute;
+        top: 2%;
+        left: 3%;
+        width: 97%;
+        height: 90%;
+        border: 0;
+    }
+    #mutebtn {
+        color: black;
+        font-weight: bold;
+        background-color: #FF1493;
+        border: none;
+        float: right;
+        margin-top: 15%;
+        margin-right: 3%;
     }
 }
