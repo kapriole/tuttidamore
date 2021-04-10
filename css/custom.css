@@ -24,6 +24,11 @@ body {
     width: "100%";
 }
 
+.name {
+    line-height: 1.1;
+    margin-bottom: 2%;
+}
+
 h1 {
     font-family: 'Beth Ellen', cursive;
 }
@@ -39,6 +44,10 @@ h2.white {
     font-size: 0.8;
     margin-bottom: -1%;
     margin-top: 1%;
+}
+
+span.pink-bg {
+    background-color: #FF1493;
 }
 
 .text {
