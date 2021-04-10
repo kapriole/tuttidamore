@@ -122,6 +122,42 @@
         </div>
 
 
+        <!--Television -->
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+
+            <div class="col-sm-4">
+                <div class="wrap-element">
+                    <video autoplay="autoplay" loop muted id="video" src="videos/trailer_tv.mp4" type="video/mp4" allowfullscreen></video>
+
+
+                    <button id="mutebtn">loud</button>
+                    <script>
+                        // Set object references
+                        var vid = document.getElementById("video");
+                        var mutebtn = document.getElementById("mutebtn");
+                        mutebtn.addEventListener("click", vidmute, false);
+
+                        function vidmute() {
+                            if (vid.muted) {
+                                vid.muted = false;
+                                mutebtn.innerHTML = "mute";
+                            } else {
+                                vid.muted = true;
+                                mutebtn.innerHTML = "loud";
+                            }
+                        }
+                    </script>
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+
+
+
         <!-- Nav Bar Bottom -->
 
         <div class="row">
@@ -144,7 +180,7 @@
                             <a class="nav-link" target="_blank" href="https://www.instagram.com/tuttidamore/">instagram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://www.youtube.com/tuttidamore">youtube</a>
+                            <a class="nav-link" target="_blank" href="http://eepurl.com/htSSd1">newsletter</a>
                         </li>
                     </ul>
                 </nav>
